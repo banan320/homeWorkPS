@@ -1,0 +1,48 @@
+body {
+  background-color: #374151;
+  color: #fff;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__input {
+  background-color: #1f2937;
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+
+.opacityText {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+#personName {
+  opacity: 1;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.colorTheory {
+  font-size: 20px;
+  line-height: 32px;
+}
+.replyText {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+footer .opacityText {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}

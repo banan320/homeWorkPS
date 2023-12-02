@@ -4,32 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header>
       <!-- container ======= -->
       <div>
-        <div>
-          <a href="#">B</a>
-          <p href="#">Мой блог</p>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#">HTML и CSS</a></li>
-            <li><a href="#">Frontend</a></li>
-            <li><a href="#">Backend</a></li>
-          </ul>
-        </nav>
-        <div>
-          <input type="text" placeholder="Поиск" />
-        </div>
+        <a href="#">B</a>
+        <p href="#">Мой блог</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HTML и CSS</a></li>
+          <li><a href="#">Frontend</a></li>
+          <li><a href="#">Backend</a></li>
+        </ul>
+      </nav>
+      <div>
+        <input class="header__input" type="text" placeholder="Поиск" />
       </div>
     </header>
     <main>
       <!-- container ======= -->
       <section>
         <section>
-          <article>
+          <article class="opacityText">
             <p>FRONTEND</p>
             <p>&bull;</p>
             <p>12 мая 2024</p>
@@ -42,8 +41,8 @@
               <div>
                 <img src="./img/Ellipse 1.png" alt="photo" />
               </div>
-              <p>Наталья Васильева</p>
-              <p>Разработчик</p>
+              <p id="personName">Наталья Васильева</p>
+              <p class="opacityText">Разработчик</p>
             </article>
             <div>
               <img src="./img/Rectangle 181.png" alt="iMac" />
@@ -53,7 +52,7 @@
 
         <section>
           <article>
-            <p>
+            <p class="colorTheory">
               Теория цвета — это особенности эмоционального восприятия человеком
               тех или иных цветовых решений. Цвета и различные их комбинации
               влияют на психику человека, а значит, во многом определяют его
@@ -64,7 +63,7 @@
               повысить конверсию.
             </p>
           </article>
-          <div>
+          <div class="replyText">
             <p>
               Универсального ответа на вопрос, как тот или иной цвет влияет на
               разных людей, нет. Эмоциональная и поведенческая реакция каждого
@@ -86,7 +85,7 @@
     </main>
     <footer>
       <div>
-        <a href="#">Все права защищены (c) 2024</a>
+        <p class="opacityText">Все права защищены (c) 2024</p>
       </div>
     </footer>
   </body>
