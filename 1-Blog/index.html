@@ -5,87 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <!-- container ======= -->
-      <div>
-        <a href="#">B</a>
-        <p href="#">Мой блог</p>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">HTML и CSS</a></li>
-          <li><a href="#">Frontend</a></li>
-          <li><a href="#">Backend</a></li>
-        </ul>
-      </nav>
-      <div>
-        <input class="header__input" type="text" placeholder="Поиск" />
+      <div class="container">
+        <div class="headerNav">
+          <div>
+            <a href="#">B</a>
+            <p href="#">Мой блог</p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">HTML и CSS</a></li>
+              <li><a href="#">Frontend</a></li>
+              <li><a href="#">Backend</a></li>
+            </ul>
+          </nav>
+          <div>
+            <input class="headerInput" type="text" placeholder="Поиск" />
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <!-- container ======= -->
-      <section>
+      <div class="container">
         <section>
-          <article class="opacityText">
-            <p>FRONTEND</p>
-            <p>&bull;</p>
-            <p>12 мая 2024</p>
-          </article>
-          <article>
-            <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
-          </article>
-          <article>
-            <article>
-              <div>
-                <img src="./img/Ellipse 1.png" alt="photo" />
-              </div>
-              <p id="personName">Наталья Васильева</p>
-              <p class="opacityText">Разработчик</p>
+          <section class="imgText">
+            <article class="opacityText">
+              <p>FRONTEND</p>
+              <p>&bull;</p>
+              <p>12 мая 2024</p>
             </article>
-            <div>
-              <img src="./img/Rectangle 181.png" alt="iMac" />
-            </div>
-          </article>
-        </section>
+            <article class="mainTitle">
+              <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
+            </article>
+            <article>
+              <article class="developer">
+                <div>
+                  <img src="./img/Ellipse 1.png" alt="photo" />
+                </div>
+                <p id="personName">Наталья Васильева</p>
+                <p class="opacityText">Разработчик</p>
+              </article>
+              <div>
+                <img src="./img/Rectangle 181.png" alt="iMac" />
+              </div>
+            </article>
+          </section>
 
-        <section>
-          <article>
-            <p class="colorTheory">
-              Теория цвета — это особенности эмоционального восприятия человеком
-              тех или иных цветовых решений. Цвета и различные их комбинации
-              влияют на психику человека, а значит, во многом определяют его
-              поведение. Маркетологи и веб-дизайнеры хорошо знают, что правильно
-              подобранная цветовая гамма сайта помогает привлечь и удержать
-              внимание пользователей, сформировать положительное отношение к
-              продукту, подтолкнуть посетителей к совершению целевых действий,
-              повысить конверсию.
-            </p>
-          </article>
-          <div class="replyText">
-            <p>
-              Универсального ответа на вопрос, как тот или иной цвет влияет на
-              разных людей, нет. Эмоциональная и поведенческая реакция каждого
-              человека зависит от личного опыта. Вместе с тем можно выделить
-              определенные закономерности влияния цветов на поведение
-              пользователей.
-            </p>
-            <p>
-              В исследовании «Влияние цвета на маркетинг» (Impact of color on
-              marketing) говорится, что использование разных цветов может
-              существенно влиять на настроение и поведение потребителей.
-              Утверждается, что от 60 до 90% покупателей (в зависимости от
-              категории продукта) дают положительную или отрицательную оценку
-              товару, основываясь только на его цвете.
-            </p>
-          </div>
+          <section>
+            <article class="colorTheory">
+              <p>
+                Теория цвета — это особенности эмоционального восприятия
+                человеком тех или иных цветовых решений. Цвета и различные их
+                комбинации влияют на психику человека, а значит, во многом
+                определяют его поведение. Маркетологи и веб-дизайнеры хорошо
+                знают, что правильно подобранная цветовая гамма сайта помогает
+                привлечь и удержать внимание пользователей, сформировать
+                положительное отношение к продукту, подтолкнуть посетителей к
+                совершению целевых действий, повысить конверсию.
+              </p>
+            </article>
+            <article class="replyText">
+              <p>
+                Универсального ответа на вопрос, как тот или иной цвет влияет на
+                разных людей, нет. Эмоциональная и поведенческая реакция каждого
+                человека зависит от личного опыта. Вместе с тем можно выделить
+                определенные закономерности влияния цветов на поведение
+                пользователей.
+              </p>
+              <p>
+                В исследовании «Влияние цвета на маркетинг» (Impact of color on
+                marketing) говорится, что использование разных цветов может
+                существенно влиять на настроение и поведение потребителей.
+                Утверждается, что от 60 до 90% покупателей (в зависимости от
+                категории продукта) дают положительную или отрицательную оценку
+                товару, основываясь только на его цвете.
+              </p>
+            </article>
+          </section>
         </section>
-      </section>
+      </div>
     </main>
     <footer>
-      <div>
-        <p class="opacityText">Все права защищены (c) 2024</p>
+      <div class="container">
+        <div class="headerInfo">
+          <p class="opacityText">Все права защищены (c) 2024</p>
+        </div>
       </div>
     </footer>
   </body>
