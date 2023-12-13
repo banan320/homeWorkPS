@@ -8,17 +8,20 @@
   </head>
   <body>
     <main>
-      <section>
-        <article>
+      <section class="container">
+        <article class="title">
           <h1>Регистрация</h1>
-          <p>Уже есть аккаунт?</p>
-          <a href="#">Войти</a>
+          <div class="linkTitle">
+            <p>Уже есть аккаунт?</p>
+            <a href="#">Войти</a>
+          </div>
         </article>
 
-        <form action="#" method="get">
+        <form class="form" action="#" method="get">
           <div>
             <label for="company">
               <input
+                class="input"
                 type="text"
                 name="company"
                 id="company"
@@ -28,9 +31,10 @@
             </label>
           </div>
 
-          <div>
+          <div class="namesForm">
             <label for="name">
               <input
+                class="inputName input"
                 type="text"
                 name="name"
                 id="name"
@@ -38,11 +42,10 @@
                 placeholder="Имя"
               />
             </label>
-          </div>
 
-          <div>
             <label for="surname">
               <input
+                class="inputSurname input"
                 type="text"
                 name="surname"
                 id="surname"
@@ -55,6 +58,7 @@
           <div>
             <label for="email">
               <input
+                class="input"
                 type="email"
                 name="email"
                 id="email"
@@ -64,14 +68,15 @@
             </label>
           </div>
 
-          <button>Зарегистрироваться</button>
+          <div><button>Зарегистрироваться</button></div>
 
           <div>
-            <label for="agree">
-              <input name="agree" id="agree" type="checkbox" required /> Я
-              прочитал и принимаю
+            <label class="agree" for="agree">
+              <input name="agree" id="agree" type="checkbox" required />
+              <span class="custom-checkbox"></span>
+              Я прочитал и принимаю
+              <a href="#">Условия использования</a>
             </label>
-            <a href="#">Условия использования</a>
           </div>
         </form>
       </section>
