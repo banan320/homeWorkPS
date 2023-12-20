@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
 body {
   background: rgb(55, 65, 81);
   background: linear-gradient(
@@ -7,8 +14,6 @@ body {
     rgba(18, 25, 40, 1) 100%
   );
   color: #fff;
-  margin: 0;
-  padding: 0;
   font-family: "Roboto", sans-serif;
 }
 
@@ -43,6 +48,12 @@ footer .opacityText {
   padding: 12px 49px;
   color: #fff;
 }
+.headerInput::placeholder {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
 
 .opacityText {
   font-size: 14px;
@@ -50,21 +61,69 @@ footer .opacityText {
 }
 
 .container {
+  max-width: 1440px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .headerInfo {
   padding: 77px;
+  text-align: center;
 }
 .headerNav {
-  padding: 80px;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  gap: 0 77px;
 }
 
+.logo {
+  padding: 8px 12px;
+  background-color: #4b5563;
+  max-width: 35px;
+  max-height: 35px;
+  border-radius: 3px;
+  text-align: center;
+  margin-right: 11px;
+}
+.headerLinks {
+  display: flex;
+  gap: 0 45px;
+}
+.headerSearch {
+  margin-left: auto;
+  position: relative;
+}
+.magnifier {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+}
+.magnifier img {
+  width: 16px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .mainTitle {
   margin-bottom: 30px;
+  max-width: 525px;
+  text-align: center;
 }
 
+.frontend {
+  display: flex;
+  gap: 0 12px;
+  margin-bottom: 14px;
+}
 .developer {
+  display: flex;
+  justify-content: center;
+  gap: 0 16px;
   margin-bottom: 28px;
 }
 .imgText {
@@ -80,12 +139,18 @@ footer .opacityText {
 .colorTheory p {
   font-size: 20px;
   line-height: 32px;
+  font-weight: 400;
 }
 .colorTheory {
   margin-bottom: 40px;
 }
+.colorTheory,
+.replyText {
+  max-width: 708px;
+}
 .replyText {
   font-size: 16px;
+  font-weight: 400;
   line-height: 30px;
 }
 
