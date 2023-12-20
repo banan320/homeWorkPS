@@ -77,11 +77,6 @@ footer .opacityText {
   gap: 0 77px;
 }
 
-.headerLogo {
-  display: flex;
-  align-items: center;
-  gap: 0 11px;
-}
 .logo {
   padding: 8px 12px;
   background-color: #4b5563;
@@ -89,6 +84,7 @@ footer .opacityText {
   max-height: 35px;
   border-radius: 3px;
   text-align: center;
+  margin-right: 11px;
 }
 .headerLinks {
   display: flex;
@@ -102,6 +98,8 @@ footer .opacityText {
   position: absolute;
   top: 14px;
   left: 18px;
+}
+.magnifier img {
   width: 16px;
 }
 
