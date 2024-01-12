@@ -18,13 +18,17 @@ body {
 .rates__block {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, minmax(328px, 369px));
+  grid-template-columns: repeat(auto-fit, 369px);
+  /* grid-template-columns: repeat(auto-fit, minmax(328px, 1fr)); */
+  /* grid-template-columns: [first] 369px [second] 369px [third] 369px; */
+
   grid-template-rows: 507px;
   gap: 25px;
 }
+
 .rates__block_item {
   display: grid;
-  grid-template-rows: 45px 150px 165px 50px;
+  grid-template-rows: [first] 45px [second] 150px [third] 165px [fourth] 50px;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0px 0px 32px rgba(78, 93, 124, 0.16);
@@ -49,10 +53,12 @@ body {
 .rates__block_item:hover > .item__price div {
   border-bottom: 1px solid #ffffff37;
 }
+.rates__block_item:hover > .item__price div:last-child {
+  border-bottom: none;
+}
 
 .rates__block_item:hover > .btn__link a {
   color: #357efe;
-  background-color: #fff;
 }
 .retes__title {
   text-align: center;
@@ -78,30 +84,33 @@ body {
   margin-bottom: 16px;
 }
 .item__title p {
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 .item__title {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  grid-row: second / third;
 }
-.title {
-  /* height: 115px; */
-}
+
 .price {
 }
 .title_card {
   /* margin-top: 42px; */
+  /* grid-row: second / third; */
 }
 .item__sale {
-  text-align: center;
   max-width: 125px;
+}
+.item__sale div {
+  text-align: center;
+
   font-family: "Inter";
   font-size: 15px;
   font-weight: 500;
   color: #fff;
+  /* width: 100%; */
   background: #1abc9c;
   padding: 6px 16px;
   border-radius: 8px;
-  margin-bottom: 16px;
 }
 .item__sale span {
   font-weight: 800;
@@ -117,6 +126,7 @@ body {
   display: grid;
   gap: 8px;
   margin-bottom: 40px;
+  grid-row: third / fourth;
 }
 .item__price div {
   display: grid;
@@ -149,7 +159,8 @@ body {
   text-align: center;
   border-radius: 47px;
   background: #357efe;
-  padding: 12px 63px;
+  padding: 12px 24px;
+  grid-row: fourth;
 }
 
 .btn__link a {
@@ -157,4 +168,19 @@ body {
   font-family: "Inter";
   font-size: 17px;
   font-weight: 800;
+}
+
+@media (max-width: 640px) {
+  .rates__block_item {
+    padding: 48px 24px;
+  }
+  .rates__block {
+    grid-template-columns: repeat(auto-fit, 328px);
+  }
+}
+
+@media (max-width: 480px) {
+  .retes__title p {
+    text-align: left;
+  }
 }
