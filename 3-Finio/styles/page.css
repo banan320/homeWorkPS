@@ -1,0 +1,22 @@
+.container {
+  max-width: 1392px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.rates__block {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 369px);
+  grid-template-rows: 507px;
+  gap: 25px;
+}
+
+.section__rates {
+  background: var(--color-primary);
+}
+
+@media (max-width: 640px) {
+  .rates__block {
+    grid-template-columns: repeat(auto-fit, 328px);
+  }
+}

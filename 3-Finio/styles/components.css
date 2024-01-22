@@ -1,0 +1,168 @@
+.component__text {
+  color: var(--color-text-wt);
+}
+
+.component__text li:hover {
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+.component__btn {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  border-radius: var(--border-47);
+  border: none;
+  font-family: "Inter";
+  font-size: 17px;
+  font-weight: 800;
+  text-align: center;
+  padding: 14px 24px;
+  cursor: pointer;
+}
+
+.section__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section__title h2 {
+  margin-bottom: 24px;
+  font-family: "Inter";
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.item__sale {
+  max-width: 125px;
+}
+.item__sale div {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  background: var(--color-bg-sale);
+  padding: 6px 16px;
+  border-radius: var(--border-8);
+}
+.item__sale span {
+  font-weight: 800;
+}
+
+.rates__block_item {
+  display: grid;
+  grid-template-rows: [first] 45px [second] 150px [third] 165px [fourth] 50px;
+  border-radius: var(--border-8);
+  background-color: var(--color-secondary);
+  box-shadow: 0px 0px 32px var(--color-shadow);
+  padding: 48px 40px;
+  cursor: pointer;
+}
+.rates__block_item:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+.rates__block_item:hover > .item__title p {
+  color: var(--color-text-hover);
+}
+
+.rates__block_item:hover > .item__price p {
+  color: var(--color-secondary);
+}
+.rates__block_item:hover > .btn__link {
+  background-color: var(--color-secondary);
+}
+
+.rates__block_item:hover > .item__price div {
+  border-bottom: 1px solid var(--color-border-hover);
+}
+.rates__block_item:hover > .item__price div:last-child {
+  border-bottom: none;
+}
+
+.rates__block_item:hover > .btn__link a {
+  color: var(--color-primary);
+}
+
+.section__title p,
+.item__title p {
+  font-family: "Inter";
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-text-stroke);
+}
+.item__title h3 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.item__title {
+  grid-row: second / third;
+}
+
+.item__price p {
+  color: var(--color-light);
+  font-family: "Inter";
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.item__price {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 40px;
+  grid-row: third / fourth;
+}
+.item__price div {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 108px;
+  border-bottom: 1px solid #4e5d7c14;
+  padding-bottom: 8px;
+}
+
+.item__price div:last-child {
+  border-bottom: none;
+  margin-bottom: -8px;
+}
+.item__price .price_benefit {
+  text-align: center;
+  border-radius: var(--border-8);
+  background: var(--color-bg-price);
+  padding: 8px 16px;
+  color: var(--color-secondary);
+  font-weight: 700;
+  width: 107px;
+  height: 36px;
+}
+.item__price_cost,
+.price_benefit {
+  justify-self: center;
+}
+
+.btn__link {
+  text-align: center;
+  border-radius: var(--border-47);
+  background: var(--color-primary);
+  padding: 12px 24px;
+  grid-row: fourth;
+}
+
+.btn__link a {
+  color: var(--color-secondary);
+  font-family: "Inter";
+  font-size: 17px;
+  font-weight: 800;
+}
+
+@media (max-width: 640px) {
+  .rates__block_item {
+    padding: 48px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section__title p {
+    text-align: left;
+  }
+}
