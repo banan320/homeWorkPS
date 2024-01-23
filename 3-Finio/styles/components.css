@@ -155,6 +155,58 @@
   font-weight: 800;
 }
 
+.analysis__item p {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text-bk);
+}
+.border_bottom {
+  border-bottom: 1px solid var(--color-border);
+}
+.item__graph {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.balance {
+  justify-content: right;
+}
+.report {
+  justify-content: left;
+}
+.report__title {
+  order: 2;
+}
+.report__img {
+  order: 1;
+}
+
+.item__graph_title h2 {
+  max-width: 530px;
+  font-family: "Inter";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: var(--color-text-bk);
+  margin-bottom: 24px;
+}
+.item__graph_img {
+  margin-bottom: 50px;
+}
+
+.item__graph_title p {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-text-stroke);
+}
+.balance__title p {
+  max-width: 482px;
+}
+.report__title p {
+  max-width: 550px;
+}
 @media (max-width: 640px) {
   .rates__block_item {
     padding: 48px 24px;

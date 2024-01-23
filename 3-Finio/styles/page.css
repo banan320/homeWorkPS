@@ -12,7 +12,18 @@
 }
 
 .section__rates {
-  background: var(--color-primary);
+  background: var(--color-secondary);
+}
+
+.section__graphs {
+  background: var(--color-secondary);
+}
+
+.graphs__items {
+  padding: 60px 0 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 @media (max-width: 640px) {
