@@ -164,10 +164,18 @@
 .border_bottom {
   border-bottom: 1px solid var(--color-border);
 }
+.item__graph__balance,
+.item__graph_report {
+  display: flex;
+  align-items: center;
+}
+.item__graph_report {
+  gap: 220px;
+}
 .item__graph {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 50px;
 }
 .balance {
   justify-content: right;
@@ -181,6 +189,9 @@
 .report__img {
   order: 1;
 }
+.title_mb80 {
+  margin-bottom: 80px;
+}
 
 .item__graph_title h2 {
   max-width: 530px;
@@ -193,6 +204,7 @@
 }
 .item__graph_img {
   margin-bottom: 50px;
+  position: relative;
 }
 
 .item__graph_title p {

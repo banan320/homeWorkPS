@@ -26,6 +26,12 @@
   gap: 80px;
 }
 
+.graph_img_cost {
+  position: absolute;
+  left: 192px;
+  top: 108px;
+}
+
 @media (max-width: 640px) {
   .rates__block {
     grid-template-columns: repeat(auto-fit, 328px);
