@@ -221,7 +221,7 @@
 .item__graph_title p {
   font-family: "Inter";
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-text-stroke);
 }
 .balance__title p {
@@ -254,6 +254,27 @@
   font-size: 24px;
   font-weight: 700;
   color: var(--color-secondary);
+}
+
+.possibilities__items_card h4 {
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-text-bk);
+}
+
+.possibilities__items_card p {
+  font-family: "Inter";
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-text-stroke);
+}
+
+.possibilities__items_card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 400px;
 }
 
 @media (max-width: 640px) {
