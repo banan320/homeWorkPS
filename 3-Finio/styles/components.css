@@ -19,6 +19,9 @@
   cursor: pointer;
 }
 
+.header__btn button {
+  width: 207px;
+}
 .section__title {
   text-align: center;
   margin-bottom: 40px;
@@ -29,7 +32,22 @@
   font-size: 48px;
   font-weight: 600;
 }
+.section__title p,
+.item__title p {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-text-stroke);
+}
 
+.accounting__title.section__title h2 {
+  color: var(--color-secondary);
+}
+
+.section__title.accounting__title p {
+  color: var(--color-text-wt);
+  margin-bottom: 55px;
+}
 .item__sale {
   max-width: 125px;
 }
@@ -82,13 +100,6 @@
   color: var(--color-primary);
 }
 
-.section__title p,
-.item__title p {
-  font-family: "Inter";
-  font-size: 17px;
-  font-weight: 500;
-  color: var(--color-text-stroke);
-}
 .item__title h3 {
   font-family: Inter;
   font-size: 32px;
@@ -219,6 +230,32 @@
 .report__title p {
   max-width: 550px;
 }
+
+.accounting__list {
+  display: flex;
+  gap: 70px;
+}
+.accounting__list_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.accounting__list_ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-text-wt);
+}
+.accounting__list_ul li > p {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
 @media (max-width: 640px) {
   .rates__block_item {
     padding: 48px 24px;

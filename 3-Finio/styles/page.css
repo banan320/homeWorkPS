@@ -20,7 +20,7 @@
 }
 
 .graphs__items {
-  padding: 60px 0 70px;
+  padding: 60px 0 0;
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -30,6 +30,17 @@
   position: absolute;
   left: 192px;
   top: 108px;
+}
+.section__accounting {
+  background: var(--color-primary);
+  padding: 120px 0;
+}
+
+.accounting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
 }
 
 @media (max-width: 640px) {
