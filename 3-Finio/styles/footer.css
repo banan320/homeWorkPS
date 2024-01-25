@@ -1,0 +1,58 @@
+.footer {
+  padding: 80px 0 32px;
+  background: var(--color-bg-footer);
+}
+
+.footer__ul_text {
+  font-family: "Inter";
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffffb2;
+}
+.footer__items {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.footer__items_logo {
+  max-width: 283px;
+}
+
+.footer__items_logo img {
+  margin-bottom: 16px;
+}
+
+.footer__items_logo p {
+  line-height: 24px;
+}
+
+.footer__items_logo,
+.footer__contacts,
+.footer__contacts_tel {
+  color: #ffffffb2;
+}
+
+.footer__ul {
+  color: #ffffff80;
+}
+
+.footer__contacts_mail {
+  color: #ffffff80;
+}
+
+.footer__ul_df {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.border__footer {
+  border-bottom: 1px solid #ffffff14;
+}
+
+.footer__license {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,5 +1,8 @@
 .component__text {
   color: var(--color-text-wt);
+  font-family: "Inter";
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .component__text li:hover {
@@ -275,6 +278,38 @@
   flex-direction: column;
   gap: 24px;
   max-width: 400px;
+}
+
+.section__title.feedback__title {
+  margin-bottom: 0;
+}
+
+.preview,
+.next {
+  position: absolute;
+  background: var(--color-text-hover);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.preview:hover,
+.next:hover {
+  background: var(--color-secondary);
+}
+
+.preview {
+  left: 60px;
+  top: 233px;
+  padding-right: 2px;
+}
+.next {
+  right: 60px;
+  top: 233px;
+  padding-left: 2px;
 }
 
 @media (max-width: 640px) {

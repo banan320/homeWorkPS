@@ -45,7 +45,8 @@
   gap: 64px;
 }
 .accounting,
-.mobile__version_items {
+.mobile__version_items,
+.feedback {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,6 +106,13 @@
   font-weight: 500;
 }
 
+.section__feedback {
+  padding: 80px 0 40px;
+}
+
+.feedback__img {
+  position: relative;
+}
 @media (max-width: 640px) {
   .rates__block {
     grid-template-columns: repeat(auto-fit, 328px);
