@@ -1,3 +1,39 @@
+.img__card {
+  width: 100%;
+}
+.img__card .img__card_response {
+  width: 100%;
+}
+.balance__img {
+  max-width: 729px;
+}
+.report__img {
+  max-width: 643px;
+}
+.expenses__img {
+  max-width: 461px;
+}
+
+.accounting__img {
+  max-width: 1176px;
+}
+.mobile__img {
+  max-width: 1128px;
+}
+.support__items_img {
+  width: 623px;
+}
+.feedback__img {
+  max-width: 1200px;
+}
+.items_partners_img {
+  width: 100%;
+  max-width: 333px;
+}
+.items_partners_img img {
+  width: 100%;
+}
+
 .component__text {
   color: var(--color-text-wt);
   font-family: "Inter";
@@ -38,8 +74,8 @@
 .section__title p,
 .item__title p {
   font-family: "Inter";
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 400;
   color: var(--color-text-stroke);
 }
 
@@ -155,7 +191,9 @@
 }
 
 .btn__link {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--border-47);
   background: var(--color-primary);
   padding: 12px 24px;
