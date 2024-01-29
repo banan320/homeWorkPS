@@ -58,3 +58,19 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@media (max-width: 825px) {
+  .footer__items {
+    flex-direction: column;
+  }
+  .footer__license_img {
+    order: 1;
+  }
+  .footer__license_text {
+    order: 2;
+  }
+  .footer__license {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

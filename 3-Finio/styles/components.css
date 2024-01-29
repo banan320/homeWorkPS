@@ -21,7 +21,7 @@
   max-width: 1128px;
 }
 .support__items_img {
-  width: 623px;
+  max-width: 623px;
 }
 .feedback__img_div {
   max-width: 600px;
@@ -389,9 +389,6 @@
 }
 
 @media (max-width: 1140px) {
-  .feedback__img {
-    padding-bottom: 48px;
-  }
   .feedback__img_title {
     margin-bottom: 48px;
     order: 2;
@@ -405,9 +402,78 @@
   .section__feedback {
     padding-bottom: 64px;
   }
+}
+
+@media (max-width: 1040px) {
+  .analysis__item p {
+    font-size: 18px;
+  }
+  .item__graph_title h2 {
+    font-size: 30px;
+  }
+
+  .section__title h2 {
+    font-size: 36px;
+  }
+
+  .possibilities__items_card h4 {
+    font-size: 24px;
+  }
+  .items_card_img img {
+    height: 65px;
+  }
+}
+
+@media (max-width: 940px) {
+  .item__graph__balance,
+  .item__graph_report,
+  .report,
+  .balance {
+    flex-direction: column;
+  }
+  .item__graph_report {
+    gap: 0px;
+  }
+
+  .balance__title,
+  .report__title,
+  .goods__title {
+    order: 2;
+    text-align: center;
+  }
+  .balance__img,
+  .report__img,
+  .item__graph_img {
+    order: 1;
+  }
+  .graph_img_cost {
+    max-width: 350px;
+  }
+  .feedback__img_title {
+    padding: 0 20px;
+  }
+
+  .feedback__img_items h5 {
+    font-size: 22px;
+  }
+  .feedback__img_fw700, .feedback__img_fw500 {
+      font-size: 15px;
+  }
+}
+@media (max-width: 940px) {
+  .accounting__list {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 760px) {
   .next,
   .preview {
     display: none;
+  }
+  .feedback__img {
+    padding-bottom: 48px;
   }
   .feedback__circle {
     display: flex;
@@ -427,31 +493,20 @@
   }
 }
 
-@media (max-width: 1040px) {
-  .analysis__item p {
-    font-size: 18px;
-  }
-  .item__graph_title h2 {
-    font-size: 30px;
-  }
-
-  .section__title h2 {
-    font-size: 36px;
-  }
-
-  .possibilities__items_card h4 {
-    font-size: 24px;
-  }
-}
-
 @media (max-width: 640px) {
   .rates__block_item {
     padding: 48px 24px;
+  }
+  .graph_img_cost {
+    max-width: 250px;
   }
 }
 
 @media (max-width: 480px) {
   .section__title p {
     text-align: left;
+  }
+  .graph_img_cost {
+    left: 0;
   }
 }

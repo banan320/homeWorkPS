@@ -135,10 +135,63 @@
     flex-direction: column;
     gap: 48px;
   }
+  .section__mobile {
+    padding: 65px 0;
+  }
+  .possibilities {
+    padding-bottom: 40px;
+  }
+  .mobile__title {
+    padding-top: 48px;
+  }
+  .section__accounting {
+    padding: 65px 0;
+  }
+  .graphs__items,
+  .accounting {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .support {
+    padding-top: 50px;
+    margin: 0 -20px 48px;
+  }
+
+  .support__items_img {
+    order: 2;
+  }
+  .support__items_socials {
+    order: 1;
+    padding: 0 24px;
+  }
+  .support__items {
+    gap: 0;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 640px) {
   .rates__block {
     grid-template-columns: repeat(auto-fit, 328px);
+  }
+}
+
+@media (max-width: 420px) {
+  .mobile__title {
+    padding: 48px 20px 0;
+  }
+  .possibilities__items {
+    margin: 0 20px;
+  }
+  .mobile {
+    margin: 0 -20px;
+  }
+  .mobile__img {
+    overflow: hidden;
+  }
+  .mobile__img img {
+    margin-left: 180px;
   }
 }
