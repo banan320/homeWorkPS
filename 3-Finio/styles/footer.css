@@ -13,6 +13,8 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 40px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 .footer__items_logo {
   max-width: 283px;

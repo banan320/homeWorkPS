@@ -58,6 +58,8 @@
 .possibilities__items {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .mobile__title {
   padding-top: 80px;
@@ -113,6 +115,28 @@
 .feedback__img {
   position: relative;
 }
+
+.feedback__img_items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 70px;
+  color: var(--color-secondary);
+}
+.feedback__img {
+  background: var(--color-primary);
+  max-width: 1156px;
+  width: 100%;
+  border-radius: var(--border-8);
+}
+
+@media (max-width: 1140px) {
+  .feedback__img_items {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+
 @media (max-width: 640px) {
   .rates__block {
     grid-template-columns: repeat(auto-fit, 328px);

@@ -23,9 +23,39 @@
 .support__items_img {
   width: 623px;
 }
-.feedback__img {
-  max-width: 1200px;
+.feedback__img_div {
+  max-width: 600px;
+  max-height: 438px;
 }
+
+.feedback__img_div img {
+  width: 100%;
+  max-height: 438px;
+  border-radius: 0 8px 8px 0;
+}
+
+.feedback__img_items h5 {
+  max-width: 400px;
+  font-family: "Inter";
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.feedback__img_fw700,
+.feedback__img_fw500 {
+  font-family: "Inter";
+  font-size: 17px;
+}
+
+.feedback__img_fw700 {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.feedback__img_fw500 {
+  font-weight: 500;
+}
+
 .items_partners_img {
   width: 100%;
   max-width: 333px;
@@ -318,6 +348,9 @@
   max-width: 400px;
 }
 
+.items_card_img img {
+  height: 90px;
+}
 .section__title.feedback__title {
   margin-bottom: 0;
 }
@@ -340,14 +373,75 @@
 }
 
 .preview {
-  left: 60px;
-  top: 233px;
+  left: 33px;
   padding-right: 2px;
 }
 .next {
-  right: 60px;
-  top: 233px;
+  right: 33px;
   padding-left: 2px;
+}
+.feedback__circle {
+  display: none;
+}
+.preview,
+.next {
+  top: 194px;
+}
+
+@media (max-width: 1140px) {
+  .feedback__img {
+    padding-bottom: 48px;
+  }
+  .feedback__img_title {
+    margin-bottom: 48px;
+    order: 2;
+  }
+  .feedback__img_div {
+    order: 1;
+  }
+  .feedback__img_div img {
+    border-radius: var(--border-8);
+  }
+  .section__feedback {
+    padding-bottom: 64px;
+  }
+  .next,
+  .preview {
+    display: none;
+  }
+  .feedback__circle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+  }
+  .feedback__circle span {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-text-hover);
+    cursor: pointer;
+  }
+  .feedback__circle span:hover {
+    background-color: var(--color-secondary);
+  }
+}
+
+@media (max-width: 1040px) {
+  .analysis__item p {
+    font-size: 18px;
+  }
+  .item__graph_title h2 {
+    font-size: 30px;
+  }
+
+  .section__title h2 {
+    font-size: 36px;
+  }
+
+  .possibilities__items_card h4 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 640px) {

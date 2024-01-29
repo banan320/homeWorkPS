@@ -46,7 +46,7 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 80px;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
@@ -83,8 +83,8 @@
   .section__hero {
     background: linear-gradient(
       174deg,
-      rgba(53, 126, 254, 1) 78%,
-      rgba(255, 255, 255, 1) 78%
+      rgba(53, 126, 254, 1) 77%,
+      rgba(255, 255, 255, 1) 77%
     );
     padding: 20px 0 100px;
   }
