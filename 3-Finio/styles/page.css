@@ -176,22 +176,7 @@
   .rates__block {
     grid-template-columns: repeat(auto-fit, 328px);
   }
-}
-
-@media (max-width: 420px) {
-  .mobile__title {
-    padding: 48px 20px 0;
-  }
-  .possibilities__items {
-    margin: 0 20px;
-  }
-  .mobile {
-    margin: 0 -20px;
-  }
-  .mobile__img {
-    overflow: hidden;
-  }
-  .mobile__img img {
-    margin-left: 180px;
+  .feedback {
+    align-items: flex-start;
   }
 }

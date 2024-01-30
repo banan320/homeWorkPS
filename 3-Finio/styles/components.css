@@ -92,7 +92,6 @@
   width: 207px;
 }
 .section__title {
-  text-align: center;
   margin-bottom: 40px;
 }
 .section__title h2 {
@@ -439,7 +438,6 @@
   .report__title,
   .goods__title {
     order: 2;
-    text-align: center;
   }
   .balance__img,
   .report__img,
@@ -456,8 +454,9 @@
   .feedback__img_items h5 {
     font-size: 22px;
   }
-  .feedback__img_fw700, .feedback__img_fw500 {
-      font-size: 15px;
+  .feedback__img_fw700,
+  .feedback__img_fw500 {
+    font-size: 15px;
   }
 }
 @media (max-width: 940px) {
@@ -500,6 +499,18 @@
   .graph_img_cost {
     max-width: 250px;
   }
+  .title_mb80 {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero__items_partners a {
+    max-width: 100%;
+  }
+  .component__btn {
+    display: block;
+  }
 }
 
 @media (max-width: 480px) {
@@ -508,5 +519,30 @@
   }
   .graph_img_cost {
     left: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .mobile__title {
+    padding: 48px 20px 0;
+  }
+  .possibilities__items {
+    margin: 0 20px;
+  }
+  .mobile {
+    margin: 0 -20px;
+  }
+
+  .mobile__img {
+    max-width: 677px;
+    overflow: hidden;
+  }
+  .mobile__img.img__card .img__card_response {
+    width: auto;
+  }
+
+  .mobile__img img {
+    margin-left: 30px;
+    height: 450px;
   }
 }
