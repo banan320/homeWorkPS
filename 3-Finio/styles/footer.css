@@ -12,7 +12,7 @@
 .footer__items {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   gap: 30px;
   flex-wrap: wrap;
 }
@@ -20,7 +20,7 @@
   max-width: 283px;
 }
 
-.footer__items_logo img {
+.footer__logo {
   margin-bottom: 16px;
 }
 
@@ -34,7 +34,7 @@
   color: #ffffffb2;
 }
 
-.footer__ul {
+.footer__ul a {
   color: #ffffff80;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .border__footer {
-  border-bottom: 1px solid #ffffff14;
+  border-top: 1px solid #ffffff14;
 }
 
 .footer__license {

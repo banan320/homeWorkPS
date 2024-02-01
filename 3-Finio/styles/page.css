@@ -3,6 +3,10 @@
   padding: 0 20px;
   margin: 0 auto;
 }
+.header__logo,
+.footer__logo {
+  max-width: 97px;
+}
 .rates__block {
   display: grid;
   justify-content: center;
@@ -17,10 +21,10 @@
 
 .section__graphs {
   background: var(--color-secondary);
+  padding: 60px 0 0;
 }
 
 .graphs__items {
-  padding: 60px 0 0;
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -62,7 +66,7 @@
   gap: 30px;
 }
 .mobile__title {
-  padding-top: 80px;
+  margin-top: 80px;
 }
 
 .support {
@@ -81,25 +85,25 @@
 }
 
 .item__graph_title.support__items_socials h2,
-.items_socials_ul li {
+.items__socials_ul li {
   color: var(--color-secondary);
 }
 
 .support__items_socials p,
-.items_socials_ul {
+.items__socials_ul {
   margin-bottom: 40px;
 }
 .item__graph_title.support__items_socials p {
   color: var(--color-text-wt);
 }
 
-.items_socials_ul {
+.items__socials_ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.items_socials_ul li {
+.items__socials_ul li {
   display: flex;
   align-items: center;
   gap: 16px;

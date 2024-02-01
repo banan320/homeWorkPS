@@ -28,6 +28,10 @@
   max-height: 438px;
 }
 
+.socials_ul_img {
+  max-width: 32px;
+}
+
 .feedback__img_div img {
   width: 100%;
   max-height: 438px;
@@ -64,18 +68,19 @@
   width: 100%;
 }
 
-.component__text {
+.component__text a {
   color: var(--color-text-wt);
   font-family: "Inter";
   font-size: 17px;
   font-weight: 400;
 }
 
-.component__text li:hover {
+.component__text a:hover {
   cursor: pointer;
   color: var(--color-secondary);
 }
 .component__btn {
+  display: inline-block;
   background: var(--color-secondary);
   color: var(--color-primary);
   border-radius: var(--border-47);
@@ -88,14 +93,21 @@
   cursor: pointer;
 }
 
-.header__btn button {
-  width: 207px;
+.header__btn {
+  max-width: 207px;
 }
-.section__title {
+.section__title,
+.feedback__title {
   margin-bottom: 40px;
+  text-align: center;
 }
 .section__title h2 {
   margin-bottom: 24px;
+  font-family: "Inter";
+  font-size: 48px;
+  font-weight: 600;
+}
+.feedback__title h2 {
   font-family: "Inter";
   font-size: 48px;
   font-weight: 600;
@@ -270,8 +282,8 @@
 .report__img {
   order: 1;
 }
-.title_mb80 {
-  margin-bottom: 80px;
+.title_pb80 {
+  padding-bottom: 50px;
 }
 
 .item__graph_title h2 {
@@ -319,11 +331,12 @@
   font-weight: 500;
   color: var(--color-text-wt);
 }
-.accounting__list_ul li > p {
+.accounting__list_items h6 {
   font-family: Inter;
   font-size: 24px;
   font-weight: 700;
   color: var(--color-secondary);
+  margin-bottom: 24px;
 }
 
 .possibilities__items_card h4 {
@@ -408,7 +421,7 @@
     font-size: 18px;
   }
   .item__graph_title h2 {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .section__title h2 {
@@ -498,9 +511,6 @@
   }
   .graph_img_cost {
     max-width: 250px;
-  }
-  .title_mb80 {
-    margin-bottom: 50px;
   }
 }
 

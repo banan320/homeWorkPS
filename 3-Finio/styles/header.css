@@ -1,7 +1,5 @@
 .header {
   background-color: var(--color-primary);
-}
-.header__items {
   padding: 40px 0;
 }
 

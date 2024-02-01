@@ -23,18 +23,18 @@
       <div class="container header__container">
         <div class="header__items">
           <div class="header__logo">
-            <img src="./img/logo-finio.png" alt="logo" />
+            <a href="#"><img src="./img/logo-finio.png" alt="logo" /></a>
           </div>
           <nav class="header__nav">
             <ul class="header__ul component__text">
-              <li>Возможности</li>
-              <li>Тарифы</li>
-              <li>Отзывы</li>
-              <li>Поддержка клиентов</li>
+              <li><a href="#">Возможности</a></li>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Поддержка клиентов</a></li>
             </ul>
           </nav>
           <div class="header__btn">
-            <button class="component__btn">Личный кабинет</button>
+            <a href="#" class="component__btn">Личный кабинет</a>
           </div>
           <div class="header__burger-menu">
             <img src="./img/burger-menu.svg" alt="burger menu" />
@@ -71,21 +71,27 @@
         <div class="container">
           <div class="analysis border_bottom">
             <div class="analysis__item">
-              <img src="./img/analysis.svg" alt="" />
+              <div class="analysis__item_img">
+                <img src="./img/analysis.svg" alt="" />
+              </div>
               <p>
                 Анализ прибыли по <br />
                 товарам и брендам
               </p>
             </div>
             <div class="analysis__item">
-              <img src="./img/wb.svg" alt="" />
+              <div class="analysis__item_img">
+                <img src="./img/wb.svg" alt="" />
+              </div>
               <p>
                 Автоматический учёт <br />
                 доходов Wildberries
               </p>
             </div>
             <div class="analysis__item">
-              <img src="./img/rub.svg" alt="" />
+              <div class="analysis__item_img">
+                <img src="./img/rub.svg" alt="" />
+              </div>
               <p>
                 От 990 рублей в месяц <br />
                 с полным функционалом
@@ -98,8 +104,8 @@
       <seection class="section__graphs">
         <div class="container">
           <div class="graphs__items">
-            <div class="item__graph__balance balance border_bottom">
-              <div class="item__graph_title balance__title title_mb80">
+            <div class="item__graph__balance balance border_bottom title_pb80">
+              <div class="item__graph_title balance__title">
                 <h2>Предотвращайте кассовые разрывы</h2>
                 <p>
                   Заранее планируйте предстоящие платежи и поступления средств.
@@ -115,8 +121,8 @@
                 />
               </div>
             </div>
-            <div class="item__graph report border_bottom">
-              <div class="item__graph_title report__title title_mb80">
+            <div class="item__graph report border_bottom title_pb80">
+              <div class="item__graph_title report__title">
                 <h2>Отчёты о прибыли и убытках всегда под рукой</h2>
                 <p>
                   Получите полную информацию о состоянии вашего бизнеса,
@@ -128,8 +134,8 @@
                 <img src="./img/report.png" alt="" class="img__card_response" />
               </div>
             </div>
-            <div class="item__graph balance border_bottom">
-              <div class="item__graph_title goods__title title_mb80">
+            <div class="item__graph balance border_bottom title_pb80">
+              <div class="item__graph_title goods__title">
                 <h2>Какие товары приносят прибыль</h2>
                 <p>
                   Находите точки роста, делайте упор на рентабельные <br />
@@ -140,8 +146,8 @@
                 <img src="./img/profit.png" alt="" class="img__card_response" />
               </div>
             </div>
-            <div class="item__graph_report report">
-              <div class="item__graph_title report__title title_mb80">
+            <div class="item__graph_report report title_pb80">
+              <div class="item__graph_title report__title">
                 <h2>Сокращайте лишние расходы</h2>
                 <p>
                   Анализируйте расходы, убирать ненужные издержки и находите
@@ -192,8 +198,8 @@
 
             <div class="accounting__list">
               <div class="accounting__list_items">
+                <h6>Excel</h6>
                 <ul class="accounting__list_ul">
-                  <li><p>Excel</p></li>
                   <li>
                     <img src="./img/attention.svg" alt="" />Долгое внесение
                     данных
@@ -213,8 +219,8 @@
                 </ul>
               </div>
               <div class="accounting__list_items">
+                <h6>FINIO</h6>
                 <ul class="accounting__list_ul">
-                  <li><p>FINIO</p></li>
                   <li>
                     <img src="./img/completed.png" alt="" />Внесение данных за
                     пару кликов
@@ -320,10 +326,25 @@
                   по телефону.
                 </p>
 
-                <ul class="items_socials_ul">
-                  <li><img src="./img/telegram.svg" alt="" />Telegram Finio</li>
-                  <li><img src="./img/whats.svg" alt="" />WhatsApp Finio</li>
-                  <li><img src="./img/mail.svg" alt="" />hello@finio.ru</li>
+                <ul class="items__socials_ul">
+                  <li>
+                    <div class="socials_ul_img">
+                      <img src="./img/telegram.svg" alt="" />
+                    </div>
+                    Telegram Finio
+                  </li>
+                  <li>
+                    <div class="socials_ul_img">
+                      <img src="./img/whats.svg" alt="" />
+                    </div>
+                    WhatsApp Finio
+                  </li>
+                  <li>
+                    <div class="socials_ul_img">
+                      <img src="./img/mail.svg" alt="" />
+                    </div>
+                    hello@finio.ru
+                  </li>
                 </ul>
                 <p>
                   Кроме того, мы готовы помочь вам с переносом данных из других
@@ -435,7 +456,7 @@
       <section class="section__feedback">
         <div class="container">
           <div class="feedback">
-            <div class="section__title feedback__title">
+            <div class="feedback__title">
               <h2>Отзывы</h2>
             </div>
             <div class="feedback__img">
@@ -465,26 +486,28 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__items border__footer">
+        <div class="footer__items">
           <div class="footer__items_logo">
-            <img src="./img/logo-finio.png" alt="logo" />
+            <div class="footer__logo">
+              <a href="#"><img src="./img/logo-finio.png" alt="logo" /></a>
+            </div>
             <p>Простой финансовый учёт для продавцов на маркетплейсах</p>
           </div>
           <nav class="footer__nav">
             <ul
               class="footer__ul_text footer__ul_df footer__ul component__text"
             >
-              <li>Возможности</li>
-              <li>Тарифы</li>
-              <li>Отзывы</li>
-              <li>Поддержка клиентов</li>
+              <li><a href="#">Возможности</a></li>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Поддержка клиентов</a></li>
             </ul>
           </nav>
           <ul class="footer__ul_text footer__ul_df footer__ul component__text">
-            <li>Политика конфиденциальности</li>
-            <li>Пользовательское соглашение</li>
-            <li>Оплата и возврат</li>
-            <li>Договор оферта</li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Оплата и возврат</a></li>
+            <li><a href="#">Договор оферта</a></li>
           </ul>
 
           <ul class="footer__ul_text footer__ul_df footer__contacts">
@@ -506,7 +529,7 @@
             <li>Москва, Вилиса Лациса 25</li>
           </ul>
         </div>
-        <div class="footer__license">
+        <div class="footer__license border__footer">
           <div class="footer__license_text footer__ul_text">
             © 2022 Finio. Все права защищены.
           </div>
