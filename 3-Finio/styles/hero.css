@@ -47,7 +47,7 @@
 .section__analysis::after {
   content: "";
   border-bottom: 1px solid var(--color-border);
-  max-width: 1432px;
+  max-width: 1392px;
   margin: 0 auto;
   display: block;
 }
