@@ -296,7 +296,7 @@
   margin-bottom: 24px;
 }
 .item__graph_img {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   position: relative;
 }
 
