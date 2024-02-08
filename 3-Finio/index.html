@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finio</title>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/page.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__items">
+          <div class="header__logo">
+            <a href="#"><img src="./img/logo-finio.png" alt="logo" /></a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__ul component__text">
+              <li><a href="#">Возможности</a></li>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Поддержка клиентов</a></li>
+            </ul>
+          </nav>
+          <div class="header__btn">
+            <a href="#" class="component__btn">Личный кабинет</a>
+          </div>
+          <div class="header__burger-menu">
+            <img src="./img/burger-menu.svg" alt="burger menu" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section__hero">
+        <div class="container">
+          <div class="hero">
+            <div class="hero__items">
+              <div class="hero__items_partners">
+                <h1>Простой финансовый учёт для продавцов на маркетплейсах</h1>
+                <a class="component__btn" href="#"
+                  >Попробовать 14 дней бесплатно</a
+                >
+                <div class="items_partners_img">
+                  <img src="./img/partners.png" alt="" />
+                </div>
+              </div>
+              <div class="hero__items_laptop img__card">
+                <img
+                  src="./img/laptop.png"
+                  alt="laptop"
+                  class="img__card_response"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__analysis">
+        <div class="container">
+          <div class="analysis">
+            <!--border_bottom -->
+            <div class="analysis__item">
+              <div class="analysis__item_img">
+                <img src="./img/analysis.svg" alt="" />
+              </div>
+              <p>
+                Анализ прибыли по <br />
+                товарам и брендам
+              </p>
+            </div>
+            <div class="analysis__item">
+              <div class="analysis__item_img">
+                <img src="./img/wb.svg" alt="" />
+              </div>
+              <p>
+                Автоматический учёт <br />
+                доходов Wildberries
+              </p>
+            </div>
+            <div class="analysis__item">
+              <div class="analysis__item_img">
+                <img src="./img/rub.svg" alt="" />
+              </div>
+              <p>
+                От 990 рублей в месяц <br />
+                с полным функционалом
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <seection class="section__graphs">
+        <div class="container">
+          <div class="graphs__items">
+            <div class="item__graph__balance balance border_bottom title_pb80">
+              <div class="item__graph_title balance__title">
+                <h2>Предотвращайте кассовые разрывы</h2>
+                <p>
+                  Заранее планируйте предстоящие платежи и поступления средств.
+                  Тем самым, вы избежите неприятной ситуации с нехваткой средств
+                  на счетах
+                </p>
+              </div>
+              <div class="item__graph_img img__card balance__img">
+                <img
+                  src="./img/balance.png"
+                  alt=""
+                  class="img__card_response"
+                />
+              </div>
+            </div>
+            <div class="item__graph report border_bottom title_pb80">
+              <div class="item__graph_title report__title">
+                <h2>Отчёты о прибыли и убытках всегда под рукой</h2>
+                <p>
+                  Получите полную информацию о состоянии вашего бизнеса,
+                  включающую все необходимые показатели для принятия правильных
+                  решений
+                </p>
+              </div>
+              <div class="item__graph_img report__img img__card">
+                <img src="./img/report.png" alt="" class="img__card_response" />
+              </div>
+            </div>
+            <div class="item__graph balance border_bottom title_pb80">
+              <div class="item__graph_title goods__title">
+                <h2>Какие товары приносят прибыль</h2>
+                <p>
+                  Находите точки роста, делайте упор на рентабельные <br />
+                  товары и увеличивайте свой доход
+                </p>
+              </div>
+              <div class="item__graph_img img__card report__img">
+                <img src="./img/profit.png" alt="" class="img__card_response" />
+              </div>
+            </div>
+            <div class="item__graph_report report title_pb80">
+              <div class="item__graph_title report__title">
+                <h2>Сокращайте лишние расходы</h2>
+                <p>
+                  Анализируйте расходы, убирать ненужные издержки и находите
+                  возможности повышать прибыльность бизнеса
+                </p>
+              </div>
+              <div class="item__graph_img img__card expenses__img">
+                <img
+                  src="./img/expenses.png"
+                  alt=""
+                  class="img__card_response"
+                />
+                <img
+                  class="graph_img_cost img__card_response"
+                  src="./img/cost.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </seection>
+      <section class="section__accounting">
+        <div class="container">
+          <div class="accounting">
+            <div class="section__title accounting__title">
+              <h2>Экономьте время и нервы на учете</h2>
+              <p>
+                Автоматическая синхронизация данных с маркетплейсов позволит вам
+                мгновенно получать все важный показатели бизнеса на <br />
+                одном экране. А с помощью мобильной версии вы сможете вносить
+                расходы всего пару кликов
+              </p>
+              <div class="accounting__btn">
+                <a class="component__btn" href="#"
+                  >Попробовать 14 дней бесплатно</a
+                >
+              </div>
+            </div>
+
+            <div class="accounting__img img__card">
+              <img
+                src="./img/accounting.png"
+                alt=""
+                class="img__card_response"
+              />
+            </div>
+
+            <div class="accounting__list">
+              <div class="accounting__list_items">
+                <h6>Excel</h6>
+                <ul class="accounting__list_ul">
+                  <li>
+                    <img src="./img/attention.svg" alt="" />Долгое внесение
+                    данных
+                  </li>
+                  <li>
+                    <img src="./img/attention.svg" alt="" />Ручной ввод данных с
+                    маркетплейсов
+                  </li>
+                  <li>
+                    <img src="./img/attention.svg" alt="" />Не удобная работа с
+                    телефона
+                  </li>
+                  <li>
+                    <img src="./img/attention.svg" alt="" />Сложность восприятия
+                    итоговых данных
+                  </li>
+                </ul>
+              </div>
+              <div class="accounting__list_items">
+                <h6>FINIO</h6>
+                <ul class="accounting__list_ul">
+                  <li>
+                    <img src="./img/completed.png" alt="" />Внесение данных за
+                    пару кликов
+                  </li>
+                  <li>
+                    <img src="./img/completed.png" alt="" />Автоматическое
+                    получение данных по API
+                  </li>
+                  <li>
+                    <img src="./img/completed.png" alt="" />Удобная мобильная
+                    версия
+                  </li>
+                  <li>
+                    <img src="./img/completed.png" alt="" />Наглядные отчеты,
+                    графики и таблицы
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__mobile">
+        <div class="container">
+          <div class="mobile">
+            <div class="possibilities border_bottom">
+              <div class="possibilities__items">
+                <div class="possibilities__items_card">
+                  <div class="items_card_img">
+                    <img src="./img/server.png" alt="" />
+                  </div>
+                  <h4>
+                    Надёжные сервера на <br />
+                    территории России
+                  </h4>
+                  <p>
+                    Никакие события не скажутся на <br />
+                    бесперебойной работе сервиса.
+                  </p>
+                </div>
+                <div class="possibilities__items_card">
+                  <div class="items_card_img">
+                    <img src="./img/ssl.png" alt="" />
+                  </div>
+                  <h4>
+                    Используем 256-битное <br />
+                    SSL-шифрование
+                  </h4>
+                  <p>
+                    Ваши данные не могут быть перехвачены, <br />
+                    даже при использовании открытых Wi-Fi <br />
+                    сетей
+                  </p>
+                </div>
+                <div class="possibilities__items_card">
+                  <div class="items_card_img">
+                    <img src="./img/security.png" alt="" />
+                  </div>
+                  <h4>
+                    Не передаём ваши <br />
+                    данные 3-им лицам
+                  </h4>
+                  <p>
+                    Все данные о доходах и расходах <br />
+                    компании видны только вам и тем, кому <br />
+                    вы открыли доступ
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mobile__version_items">
+              <div class="section__title mobile__title">
+                <h2>Мобильная версия</h2>
+                <p>
+                  Пользоваться всем функционалом сервиса удобно в любом месте и
+                  с любых устройств
+                </p>
+              </div>
+              <div class="mobile__img img__card">
+                <img
+                  src="./img/pc-mobile.png"
+                  alt=""
+                  class="img__card_response"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__support">
+        <div class="container">
+          <div class="support">
+            <div class="support__items">
+              <div class="support__items_img img__card">
+                <img src="./img/human.png" alt="" class="img__card_response" />
+              </div>
+              <div class="support__items_socials item__graph_title">
+                <h2>Поддержка клиентов</h2>
+                <p>
+                  Мы всегда готовы ответить на любые вопросы в онлайн чате или
+                  по телефону.
+                </p>
+
+                <ul class="items__socials_ul">
+                  <li>
+                    <div class="socials_ul_img">
+                      <img src="./img/telegram.svg" alt="" />
+                    </div>
+                    Telegram Finio
+                  </li>
+                  <li>
+                    <div class="socials_ul_img">
+                      <img src="./img/whats.svg" alt="" />
+                    </div>
+                    WhatsApp Finio
+                  </li>
+                  <li>
+                    <div class="socials_ul_img">
+                      <img src="./img/mail.svg" alt="" />
+                    </div>
+                    hello@finio.ru
+                  </li>
+                </ul>
+                <p>
+                  Кроме того, мы готовы помочь вам с переносом данных из других
+                  сервисов или Excel.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__rates">
+        <div class="container">
+          <div class="rates">
+            <div class="section__title">
+              <h2>Тарифы</h2>
+              <p>
+                Все тарифы имеют полный функционал и отличаются только
+                количеством месяцев и выгодой
+              </p>
+            </div>
+            <div class="rates__block">
+              <div class="rates__block_item">
+                <div class="item__title">
+                  <h3>1 месяц</h3>
+                  <p>Тариф подойдёт тем, кто ведёт краткосрочные проекты</p>
+                </div>
+                <div class="item__price">
+                  <div>
+                    <p>Общая стоимость</p>
+                    <p>1 990 ₽</p>
+                  </div>
+                  <div>
+                    <p>Ваша выгода</p>
+                    <p>0 ₽</p>
+                  </div>
+                  <div>
+                    <p>Стоимость месяца</p>
+                    <p>1 990 ₽/мес</p>
+                  </div>
+                </div>
+                <div class="btn__link">
+                  <a href="#" class="item__link">Бесплатно 14 дней</a>
+                </div>
+                <!-- </div> -->
+              </div>
+              <div class="rates__block_item">
+                <div class="item__sale">
+                  <div>Выгода <span>25</span>%</div>
+                </div>
+                <div class="item__title">
+                  <h3>6 месяцев</h3>
+                  <p>
+                    Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт
+                  </p>
+                </div>
+                <div class="item__price">
+                  <div>
+                    <p>Общая стоимость</p>
+                    <p class="item__price_cost">8 940 ₽</p>
+                  </div>
+                  <div>
+                    <p>Ваша выгода</p>
+                    <p class="price_benefit">3 000 ₽</p>
+                  </div>
+                  <div>
+                    <p>Стоимость месяца</p>
+                    <p class="item__price_cost">1 490 ₽/мес</p>
+                  </div>
+                </div>
+                <div class="btn__link">
+                  <a href="#" class="item__link">Бесплатно 14 дней</a>
+                </div>
+              </div>
+              <div class="rates__block_item">
+                <div class="item__sale">
+                  <div>Выгода <span>50</span>%</div>
+                </div>
+                <div class="item__title title">
+                  <h3>12 месяцев</h3>
+                  <p>
+                    Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт и
+                    хочет сэкономить
+                  </p>
+                </div>
+                <div class="item__price price">
+                  <div>
+                    <p>Общая стоимость</p>
+                    <p class="item__price_cost">11 880 ₽</p>
+                  </div>
+                  <div>
+                    <p>Ваша выгода</p>
+                    <p class="price_benefit">12 000 ₽</p>
+                  </div>
+                  <div>
+                    <p>Стоимость месяца</p>
+                    <p class="item__price_cost">990 ₽/мес</p>
+                  </div>
+                </div>
+                <div class="btn__link">
+                  <a href="#" class="item__link">Бесплатно 14 дней</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__feedback">
+        <div class="container">
+          <div class="feedback">
+            <div class="feedback__title">
+              <h2>Отзывы</h2>
+            </div>
+            <div class="feedback__img">
+              <div class="preview"><img src="./img/preview.svg" alt="" /></div>
+              <div class="feedback__img_items">
+                <div class="feedback__img_title">
+                  <h5>
+                    Впервые за долгое время увидела свои расходы и доходы как на
+                    ладони.
+                  </h5>
+
+                  <p class="feedback__img_fw700">Дана Валеева</p>
+                  <p class="feedback__img_fw500">Продавец Wildberries</p>
+                </div>
+                <div class="feedback__img_div">
+                  <img src="./img/feedback.png" alt="" class="img_feedback" />
+                </div>
+              </div>
+              <div class="next"><img src="./img/next.svg" alt="" /></div>
+              <div class="feedback__circle">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__items">
+          <div class="footer__items_logo">
+            <div class="footer__logo">
+              <a href="#"><img src="./img/logo-finio.png" alt="logo" /></a>
+            </div>
+            <p>Простой финансовый учёт для продавцов на маркетплейсах</p>
+          </div>
+          <nav class="footer__nav">
+            <ul
+              class="footer__ul_text footer__ul_df footer__ul component__text"
+            >
+              <li><a href="#">Возможности</a></li>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Поддержка клиентов</a></li>
+            </ul>
+          </nav>
+          <ul class="footer__ul_text footer__ul_df footer__ul component__text">
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Оплата и возврат</a></li>
+            <li><a href="#">Договор оферта</a></li>
+          </ul>
+
+          <ul class="footer__ul_text footer__ul_df footer__contacts">
+            <li>ИП Ларичев Антон Андреевич</li>
+            <li>ИНН 773373765379</li>
+            <li>ОГРИП 322774600208776</li>
+            <li>
+              Эл. почта:
+              <a class="footer__contacts_mail" href="mailto:alarichev@gmail.com"
+                >alarichev@gmail.com</a
+              >
+            </li>
+            <li>
+              Тел.:
+              <a class="footer__contacts_tel" href="tel:+79104357592"
+                >+7 (910) 435-75-92</a
+              >
+            </li>
+            <li>Москва, Вилиса Лациса 25</li>
+          </ul>
+        </div>
+        <div class="footer__license border__footer">
+          <div class="footer__license_text footer__ul_text">
+            © 2022 Finio. Все права защищены.
+          </div>
+          <div class="footer__license_img">
+            <img src="./img/visa.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

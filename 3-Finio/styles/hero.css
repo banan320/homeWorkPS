@@ -1,0 +1,120 @@
+.section__hero {
+  background: rgb(53, 126, 254);
+  background: linear-gradient(
+    174deg,
+    rgba(53, 126, 254, 1) 63%,
+    rgba(255, 255, 255, 1) 63%
+  );
+  padding: 58px 0 80px;
+}
+
+.hero__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__items_partners {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.hero__items_partners a {
+  max-width: 345px;
+}
+
+.hero__items_partners h1 {
+  max-width: 580px;
+  font-family: "Inter";
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--color-secondary);
+}
+.hero__items_laptop {
+  max-width: 1039px;
+}
+
+.items_partners_img {
+  padding-top: 40px;
+}
+
+.section__analysis {
+  background-color: var(--color-secondary);
+  /* margin-bottom: 60px; */
+  /* margin: 0 auto; */
+  margin: 0 20px 60px;
+}
+
+.section__analysis::after {
+  content: "";
+  border-bottom: 1px solid var(--color-border);
+  max-width: 1392px;
+  margin: 0 auto;
+  display: block;
+}
+
+.analysis {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.analysis__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.analysis__item_img {
+  max-width: 64px;
+}
+
+@media (max-width: 1240px) {
+  .section__hero {
+    background: linear-gradient(
+      174deg,
+      rgba(53, 126, 254, 1) 72%,
+      rgba(255, 255, 255, 1) 72%
+    );
+    padding: 58px 0 100px;
+  }
+
+  .hero__items_partners h1 {
+    font-size: 30px;
+  }
+
+  .items_partners_img {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .hero__items_laptop {
+    display: none;
+  }
+
+  .section__hero {
+    background: linear-gradient(
+      174deg,
+      rgba(53, 126, 254, 1) 77%,
+      rgba(255, 255, 255, 1) 77%
+    );
+    padding: 20px 0 100px;
+  }
+}
+@media (max-width: 640px) {
+  .section__hero {
+    background: linear-gradient(
+      174deg,
+      rgba(53, 126, 254, 1) 86%,
+      rgba(255, 255, 255, 1) 86%
+    );
+  }
+  .section__analysis {
+    padding-top: 38px;
+  }
+  .item__graph {
+    gap: 0;
+  }
+}
