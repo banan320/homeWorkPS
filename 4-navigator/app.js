@@ -1,3 +1,4 @@
+// Навигатор ============
 const addressLat = 100;
 const addressLong = 500;
 const positionLat = 10;
