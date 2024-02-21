@@ -14,7 +14,6 @@ function currencyConversion(summ, currency = "rub", targetCurrency = "usd") {
       return summ * rubToEur;
     case targetCurrency === "cny" && currency === "rub":
       return summ * rubToCny;
-
     case targetCurrency === "rub" && currency === "usd":
       return summ * dollarToRub;
     case targetCurrency === "rub" && currency === "eur":
