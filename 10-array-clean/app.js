@@ -1,23 +1,19 @@
 // Функция высшего порядка ============
-const array = [1, 2, 3, 4, 5, 25, 40, -34, 0, 5, 3];
+const array = [1, 2, 3, 4, 5, -25, 40, -34, 0, 5, 3];
 
-function filter(num) {
-  let removeNum = num;
-  console.log(num);
-  if (removeNum > 5) {
-    array.splice(0, 1);
+function arrayFilter(array, fn) {
+  let newArr = [];
+  for (const num of array) {
+    if (fn(num) == true) {
+      newArr.push(num);
+    }
+  }
+  return newArr;
+}
+function removeNumber(num) {
+  if (num < 0) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
-
-function arrayFiltering(array, fn, num) {
-  let functionFilter = fn(num);
-  let filteringArray = array;
-  for (let i = 0; i < filteringArray.length; i++) {
-    functionFilter;
-  }
-  return filteringArray;
-}
-console.log(arrayFiltering(array, filter, 6));
+console.log(arrayFilter(array, removeNumber));
