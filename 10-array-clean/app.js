@@ -11,9 +11,7 @@ function arrayFilter(array, fn) {
   return newArr;
 }
 function removeNumber(num) {
-  if (num < 0) {
-    return true;
-  }
-  return false;
+  return num < 0 ? true : false;
 }
+
 console.log(arrayFilter(array, removeNumber));
